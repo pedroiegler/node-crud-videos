@@ -1,4 +1,4 @@
-import { fastify } from '../../project/node_modules/fastify/fastify.js'
+import { fastify } from 'fastify'
 import { VideosAPI } from './routes/api.js'
 
 const server = fastify()

@@ -1,6 +1,6 @@
 import { sql } from '../config/db.js'
 
-export class VideosCRUD {
+export class VideosRepository {
     async list(search) {
         if (search)
             return await sql`SELECT * FROM videos WHERE title ILIKE ${'%' + search + '%'}`;

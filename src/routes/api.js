@@ -1,7 +1,7 @@
-import { VideosCRUD } from '../repositories/videos.repository.js'
+import { VideosRepository } from '../repositories/videos.repository.js'
 
 export function VideosAPI(server){
-    const database = new VideosCRUD()
+    const database = new VideosRepository()
 
     server.get('/videos', async (request) => {
         const search = request.query.search;
